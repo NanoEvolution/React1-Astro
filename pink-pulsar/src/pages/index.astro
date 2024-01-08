@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import EjercicioReact from '../components/ejercicio1.jsx';
+import ComprovarNotes from '../components/ejercicio2.jsx';
+const valor_numero = 9
+---
+<Layout title="Welcome to Astro.">
+<EjercicioReact client:load valor_numero={valor_numero}/>
+<ComprovarNotes></ComprovarNotes>
+</Layout>
